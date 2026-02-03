@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegoLandia Kids Store</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="home">
+    <header>
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="lego">LL</span>
+          LegoLandia
+        </a>
+        <nav>
+          <ul>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a class="badge" href="cart.html">Cart: <span data-cart-count>0</span></a>
+          <a class="button secondary" href="login.html">Sign In</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h1>Build, Play, and Imagine with our Lego + Board Game Wonderland!</h1>
+            <p>
+              Discover colorful sets, creative board games, and smart STEM kits designed for curious kids and joyful family nights.
+            </p>
+            <div class="split">
+              <a class="button" href="products.html">Shop the Collection</a>
+              <a class="button secondary" href="about.html">Why Parents Love Us</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Starter Pack Bonus</h2>
+            <p>Every first order includes a free mini-figure, surprise stickers, and a play plan!</p>
+            <div class="notice">Free shipping on orders over $50</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Fan Favorites</h2>
+          <div class="grid cards" data-product-grid></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid cards">
+          <article class="card">
+            <h3>Creative Clubs</h3>
+            <p>Weekly build challenges, printable quests, and expert tips for parents.</p>
+          </article>
+          <article class="card">
+            <h3>Safety First</h3>
+            <p>Every set is tested, kid-friendly, and curated for growing hands.</p>
+          </article>
+          <article class="card">
+            <h3>Super Support</h3>
+            <p>Chat with a Play Coach in under 2 minutes for instant help.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h4>LegoLandia</h4>
+          <p>Where imagination meets playtime, every day.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p><a href="products.html">Shop</a></p>
+          <p><a href="about.html">About</a></p>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <p><a href="checkout.html">Checkout</a></p>
+          <p><a href="profile.html">Account</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

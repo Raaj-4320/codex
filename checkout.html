@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | LegoLandia</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="checkout">
+    <header>
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="lego">LL</span>
+          LegoLandia
+        </a>
+        <nav>
+          <ul>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a class="badge" href="cart.html">Cart: <span data-cart-count>0</span></a>
+          <a class="button secondary" href="login.html">Sign In</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container split">
+        <form class="form" data-checkout-form>
+          <h1>Checkout</h1>
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="address">Shipping Address</label>
+          <input id="address" name="address" required />
+
+          <label for="city">City</label>
+          <input id="city" name="city" required />
+
+          <label for="shipping">Shipping Agency</label>
+          <select id="shipping" name="shipping">
+            <option value="Rainbow Express">Rainbow Express</option>
+            <option value="Playtime Delivery">Playtime Delivery</option>
+            <option value="RocketShip Logistics">RocketShip Logistics</option>
+          </select>
+
+          <label for="payment">Payment Method</label>
+          <select id="payment" name="payment">
+            <option value="Card">Credit Card</option>
+            <option value="Wallet">Play Wallet</option>
+            <option value="COD">Cash on Delivery</option>
+          </select>
+
+          <button class="button" type="submit">Place Order</button>
+        </form>
+
+        <div class="summary" data-checkout-summary></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h4>Secure Checkout</h4>
+          <p>Encrypted payments and friendly customer support.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
