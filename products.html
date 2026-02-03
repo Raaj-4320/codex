@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | LegoLandia</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="products">
+    <header>
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="lego">LL</span>
+          LegoLandia
+        </a>
+        <nav>
+          <ul>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <a class="badge" href="cart.html">Cart: <span data-cart-count>0</span></a>
+          <a class="button secondary" href="login.html">Sign In</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">Shop All Adventures</h1>
+        <p>Pick your next build, board game, or STEM mission.</p>
+        <div class="grid cards" data-product-grid></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h4>Need help?</h4>
+          <p>Chat with our Play Coaches for gift ideas.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p><a href="cart.html">View Cart</a></p>
+          <p><a href="checkout.html">Checkout</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
